@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Library Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Online Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#members">Members</a></li> <!-- Added link to Members page -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Online Library</h2>
+        <p>Browse our collection of books, eBooks, and more. Order your next great read today!</p>
+    </section>
+
+    <section id="books">
+        <h2>Books Collection</h2>
+        <div class="book-container">
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\Harry Potter.png" alt="Harry Potter and the Sorcerer's Stone">
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p>Author: J.K. Rowling</p>
+                <button onclick="addToCart('Harry Potter and the Sorcerer\'s Stone')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\Hunger_Games.png" alt="The Hunger Games">
+                <h3>The Hunger Games</h3>
+                <p>Author: Suzanne Collins</p>
+                <button onclick="addToCart('The Hunger Games')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="rootfolder/1984.png" alt="1984">
+                <h3>1984</h3>
+                <p>Author: George Orwell</p>
+                <button onclick="addToCart('1984')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\To_kill_a_mockingbird.png" alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Author: Harper Lee</p>
+                <button onclick="addToCart('To Kill a Mockingbird')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\The_Great_Gatsby.png" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+                <button onclick="addToCart('The Great Gatsby')">Add to Cart</button>
+            </div>
+            <!-- New Books Added -->
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\Catch_22.png" alt="Catch-22">
+                <h3>Catch-22</h3>
+                <p>Author: Joseph Heller</p>
+                <button onclick="addToCart('Catch-22')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\The_Shining.png" alt="The Shining">
+                <h3>The Shining</h3>
+                <p>Author: Stephen King</p>
+                <button onclick="addToCart('The Shining')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\Brave_New_World.png" alt="Brave New World">
+                <h3>Brave New World</h3>
+                <p>Author: Aldous Huxley</p>
+                <button onclick="addToCart('Brave New World')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\The_Alchemist.png" alt="The Alchemist">
+                <h3>The Alchemist</h3>
+                <p>Author: Paulo Coelho</p>
+                <button onclick="addToCart('The Alchemist')">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="C:\Users\xavie\LIbrary Website\rootfolder\The_Picture_Of_Dorian_Gray.png" alt="The Picture of Dorian Gray">
+                <h3>The Picture of Dorian Gray</h3>
+                <p>Author: Oscar Wilde</p>
+                <button onclick="addToCart('The Picture of Dorian Gray')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members">
+        <h2>Members Area</h2>
+        <div class="member-registration">
+            <h3>Register as a New Member</h3>
+            <form action="register_member.php" method="POST">
+                <label for="member_name">Full Name:</label>
+                <input type="text" id="member_name" name="member_name" required>
+
+                <label for="member_email">Email:</label>
+                <input type="email" id="member_email" name="member_email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="plan">Choose Membership Plan:</label>
+                <select id="plan" name="plan">
+                    <option value="1">Basic Plan</option>
+                    <option value="2">Premium Plan</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="member-list">
+            <h3>Existing Members</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subscription Date</th>
+                    <th>Plan</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>2024-01-15</td>
+                    <td>Premium Plan</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>2024-02-01</td>
+                    <td>Basic Plan</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>Email: info@onlinelibrary.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Library Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
