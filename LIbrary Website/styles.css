@@ -142,6 +142,133 @@ nav ul li a:hover {
     background-color: #444; /* Slightly lighter black on hover */
 }
 
+/*.log-on {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding-top: 100px;
+    display: inline-block;
+    align-items: center; 
+
+}*/
+.log-on {
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.log-on label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0 0.2rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.log-on input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.log-on input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.cart-summary h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cart-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-summary ul li:last-child {
+    font-weight: bold;
+    border: none;
+}
+
+/* Checkout Form */
+.checkout-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.checkout-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkout-form .btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-form .btn:hover {
+    background-color: #0056b3;
+}
 /* Footer */
 footer {
     background-color: #000; /* Black background */
